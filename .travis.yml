@@ -6,8 +6,8 @@ install:
  - brew install jq # process JSON 
 
  - sudo npm install -g titanium
+ - sudo npm install -g alloy
  - titanium login travisci@appcelerator.com travisci
- - titanium sdk install 3.5.0.GA --no-progress-bars
 
  - cd $TRAVIS_BUILD_DIR/..
  - export TRAVIS_USER=${PWD}
