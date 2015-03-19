@@ -7,7 +7,7 @@ install:
 
  - sudo npm install -g titanium
  - titanium login travisci@appcelerator.com travisci
- - titanium sdk install latest --no-progress-bars
+ - titanium sdk install 3.5.0.GA --no-progress-bars
 
  - cd $TRAVIS_BUILD_DIR/..
  - export TRAVIS_USER=${PWD}
