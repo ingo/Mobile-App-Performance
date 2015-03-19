@@ -43,8 +43,6 @@ install:
 
  - cat ~/.titanium/config.json
 
- - npm install
-
 script:
 
  - ti build --platform ios ./Titanium
