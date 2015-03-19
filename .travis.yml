@@ -45,12 +45,13 @@ install:
 
 script:
 
- - ti build --platform ios ./Titanium
+ - cd $TRAVIS_BUILD_DIR/Titanium
+ - ti build --platform ios
 
  - curl -o android_wait_for_emulator.sh https://raw.githubusercontent.com/appcelerator-modules/ci/master/travis/android_wait_for_emulator.sh
  - source android_wait_for_emulator.sh
  - adb shell input keyevent 82 &
 
- - ti build --platform android ./Titanium
+ - ti build --platform android
 
 after_success:
